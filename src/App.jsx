@@ -14,42 +14,33 @@ import {
   Gamepad2,
   Star,
   Quote,
-  X, // <-- Make sure X is imported for the close button
+  X,
 } from "lucide-react";
-
 /* --- HELPER DATA --- */
 const projects = [
   {
     id: 1,
     tab: "reels",
-    title: "Viral Style tiktok",
-    desc: "Fast-paced editing with engaging captions and pattern interrupts.",
-    type: "Short-Form",
-    videoSrc: "/final siguro.mp4",
+    title: "Real Estate Showcase",
+    desc: "Fast-paced property tour with engaging captions and pattern interrupts.",
+    type: "Real Estate",
+    videoSrc: "/Reel1 realestate.mp4",
   },
   {
     id: 2,
     tab: "meta-ads",
-    title: "Vlog Cut",
-    desc: "A rhythmic and engaging story of a day-in-the-life.",
-    type: "Vlog",
-    videoSrc: "/TO POST CLEAN.mp4",
-  },
-  {
-    id: 3,
-    tab: "gaming",
-    title: "Valorant Highlight Reel",
-    desc: "High-energy gameplay focusing on clutch moments and reactions.",
-    type: "Gaming",
-    videoSrc: "/final siguro.mp4",
+    title: "Raki Yata Restaurant Promo",
+    desc: "Mouth-watering promotional video designed to drive foot traffic for a premium Japanese restaurant.",
+    type: "Promo Ad",
+    videoSrc: "/meta 4.mp4",
   },
   {
     id: 4,
     tab: "reels",
-    title: "Call of Duty VOD Edit",
-    desc: "Condensing a 4-hour stream into a highly engaging YouTube video.",
-    type: "Gaming",
-    videoSrc: "/export 1.mp4",
+    title: "Airbnb Listing Highlight",
+    desc: "Aesthetic and inviting short-form video designed to boost bookings and showcase amenities.",
+    type: "Listing Promo",
+    videoSrc: "/Reel2 Airbnb.mp4",
   },
   {
     id: 5,
@@ -70,34 +61,50 @@ const projects = [
   {
     id: 7,
     tab: "meta-ads",
-    title: "Podcast Highlight Cut",
-    desc: "Optimized for TikTok/Reels retention. High-energy hooks.",
-    type: "Short-Form",
+    title: "KeffordConsulting Promo Ad",
+    desc: "High-converting ad for a US-based agency specializing in brand sales and talent acquisition.",
+    type: "B2B Ad",
     videoSrc: "/meta 3.mp4",
   },
   {
     id: 8,
     tab: "podcasts",
-    title: "Dialogue Polish",
-    desc: "Multi-cam podcast edit focused on perfect audio and dialogue flow.",
-    type: "Podcast",
-    videoSrc: "/export 1.mp4",
+    title: "Clockwise Crypto Sponsorship",
+    desc: "High-retention sponsorship integration crafted for a massive YouTube audience of 423k+ subscribers.",
+    type: "YouTube Sponsor",
+    videoSrc: "/Pod1.mp4",
   },
   {
     id: 9,
-    tab: "real-estate",
-    title: "Luxury Property Tour",
-    desc: "Smooth transitions, color grading, and elegant pacing.",
-    type: "Real Estate",
-    videoSrc: "/final siguro.mp4",
+    tab: "podcasts",
+    title: "Clockwise Crypto Ad Read",
+    desc: "Polished and engaging crypto sponsorship edit tailored for a channel with over 423,000 subscribers.",
+    type: "YouTube Sponsor",
+    videoSrc: "/Pod2.mp4",
   },
   {
     id: 10,
     tab: "reels",
-    title: "Condo Listing Highlight",
-    desc: "Sleek presentation designed to capture urban living.",
-    type: "Listing",
-    videoSrc: "/to post .mp4",
+    title: "Doctor Spotlight Reel",
+    desc: "Professional short-form content designed to build authority and trust for medical practitioners.",
+    type: "Personal Brand",
+    videoSrc: "/Reel3 Doctor.mp4",
+  },
+  {
+    id: 11,
+    tab: "gaming",
+    title: "Doctor Spotlight Reel",
+    desc: "Professional short-form content designed to build authority and trust for medical practitioners.",
+    type: "Personal Brand",
+    videoSrc: "/Game1 Roblox.mp4",
+  },
+  {
+    id: 10,
+    tab: "gaming",
+    title: "Doctor Spotlight Reel",
+    desc: "Professional short-form content designed to build authority and trust for medical practitioners.",
+    type: "Personal Brand",
+    videoSrc: "/Game2 Roblox.mp4",
   },
 ];
 
@@ -118,34 +125,33 @@ const skills = [
     desc: "I don't just cut clips; I craft narratives that build trust and drive direct response.",
   },
 ];
-
 const reviews = [
   {
-    text: "Justine completely transformed our Meta ad creatives. Our CTR doubled within the first week of running his edits. He just knows what converts.",
-    author: "Mark T.",
-    role: "E-com Brand Owner",
+    text: "The sponsorship edits for Clockwise Crypto have been flawless. Keeping a 423k+ subscriber audience engaged during an ad read is tough, but his retention strategies are spot on.",
+    author: "Production Team",
+    role: "Clockwise Crypto",
   },
   {
-    text: "The YouTube retention on my Valorant videos went up 15%. His understanding of gaming pacing and pattern interrupts is insane.",
-    author: "Sarah J.",
-    role: "Creator & Streamer",
+    text: "The promo video he cut for Raki Yata was incredible. The visuals were mouth-watering and it genuinely drove a noticeable increase in our restaurant's foot traffic!",
+    author: "Marketing Manager",
+    role: "Raki Yata Restaurant",
   },
   {
-    text: "The real estate tours look incredibly premium. The color grading and smooth transitions helped us land three serious buyers in one week.",
-    author: "David R.",
-    role: "Listing Agent",
+    text: "Justine delivered a high-converting B2B ad for KeffordConsulting. His visual storytelling builds instant brand trust, which is exactly what we need for talent acquisition.",
+    author: "Operations Director",
+    role: "KeffordConsulting",
   },
   {
-    text: "His multi-cam podcast edits are seamless. Dialogue is polished and he finds the perfect clips for social media distribution.",
-    author: "Elena G.",
-    role: "Podcast Producer",
+    text: "Our Airbnb listing bookings jumped right after we uploaded his highlight reel. The smooth transitions and aesthetic pacing perfectly captured the vibe of the space.",
+    author: "Marcus L.",
+    role: "Airbnb Superhost",
   },
 ];
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("reels");
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
-  const [selectedVideo, setSelectedVideo] = useState(null); // <-- Added state for modal
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -336,31 +342,34 @@ export default function App() {
         </aside>
 
         {/* RIGHT PANEL */}
-        <main className="flex-1 flex flex-col min-w-0 bg-transparent h-[600px] lg:h-auto">
-          <div className="overflow-x-auto custom-scrollbar bg-black/10 border-b border-white/5">
-            <nav className="flex pt-4 px-4 lg:px-6 gap-1 min-w-max pb-1 lg:pb-0">
-              {tabs.map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center gap-2 px-4 lg:px-6 py-2.5 lg:py-3 text-xs lg:text-sm font-bold rounded-t-xl transition-all duration-300 relative whitespace-nowrap ${
-                    activeTab === tab.id
-                      ? "bg-[var(--color-studio-card)] text-white z-10 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]"
-                      : "bg-transparent text-[var(--color-text-muted)] hover:bg-white/5 hover:text-white"
-                  }`}
-                >
-                  <div
-                    className={`${activeTab === tab.id ? "text-[var(--color-sunset)]" : "text-gray-500"}`}
+        <main className="flex-1 flex flex-col min-w-0 bg-transparent h-[600px] lg:h-auto relative">
+          {/* TABS CONTAINER - Now sticky to stay in place while scrolling */}
+          <div className="sticky top-0 z-40 bg-black/80 backdrop-blur-md border-b border-white/5">
+            <div className="overflow-x-auto custom-scrollbar">
+              <nav className="flex pt-4 px-4 lg:px-6 gap-1 min-w-max pb-1 lg:pb-0">
+                {tabs.map((tab) => (
+                  <button
+                    key={tab.id}
+                    onClick={() => setActiveTab(tab.id)}
+                    className={`flex items-center gap-2 px-4 lg:px-6 py-2.5 lg:py-3 text-xs lg:text-sm font-bold rounded-t-xl transition-all duration-300 relative whitespace-nowrap ${
+                      activeTab === tab.id
+                        ? "bg-[var(--color-studio-card)] text-white z-10 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]"
+                        : "bg-transparent text-[var(--color-text-muted)] hover:bg-white/5 hover:text-white"
+                    }`}
                   >
-                    {tab.icon}
-                  </div>
-                  {tab.label}
-                  {activeTab === tab.id && (
-                    <div className="absolute top-0 left-0 right-0 h-[3px] bg-[var(--color-sunset)] rounded-t-full z-20" />
-                  )}
-                </button>
-              ))}
-            </nav>
+                    <div
+                      className={`${activeTab === tab.id ? "text-[var(--color-sunset)]" : "text-gray-500"}`}
+                    >
+                      {tab.icon}
+                    </div>
+                    {tab.label}
+                    {activeTab === tab.id && (
+                      <div className="absolute top-0 left-0 right-0 h-[3px] bg-[var(--color-sunset)] rounded-t-full z-20" />
+                    )}
+                  </button>
+                ))}
+              </nav>
+            </div>
           </div>
 
           <div className="p-4 sm:p-6 lg:p-10 flex-grow overflow-y-auto custom-scrollbar relative">
@@ -396,7 +405,7 @@ export default function App() {
 
                       {/* --- UN-CROPPED HOVER & CLICKABLE VIDEO CONTAINER --- */}
                       <div
-                        onClick={() => setSelectedVideo(project)} // Opens Modal on click
+                        onClick={() => setSelectedVideo(project)}
                         className="w-full h-[250px] sm:h-[350px] rounded-xl bg-black border border-white/5 flex flex-col items-center justify-center relative overflow-hidden group-hover:border-[var(--color-sunset)]/30 transition-colors group cursor-pointer"
                         onMouseEnter={(e) => {
                           const vid = e.currentTarget.querySelector("video");
@@ -406,13 +415,14 @@ export default function App() {
                           const vid = e.currentTarget.querySelector("video");
                           if (vid) {
                             vid.pause();
-                            vid.currentTime = 0; // Resets when mouse leaves
+                            vid.currentTime = 0;
                           }
                         }}
                       >
                         {project.videoSrc ? (
                           <video
-                            src={project.videoSrc}
+                            // Fixes the hash symbol issue in filenames
+                            src={project.videoSrc.replace(/#/g, "%23")}
                             className="w-full h-full object-contain pointer-events-none"
                             muted
                             loop
@@ -422,7 +432,7 @@ export default function App() {
                           <Play className="w-6 h-6 lg:w-8 lg:h-8 opacity-40 text-gray-600" />
                         )}
 
-                        {/* Play Button Overlay - Hides smoothly on hover */}
+                        {/* Play Button Overlay */}
                         <div className="absolute inset-0 bg-black/40 group-hover:opacity-0 flex items-center justify-center transition-opacity duration-300 pointer-events-none">
                           <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[var(--color-sunset)]/90 shadow-[0_0_20px_rgba(255,87,34,0.4)] flex items-center justify-center pl-1">
                             <Play className="w-5 h-5 lg:w-6 lg:h-6 fill-white text-white" />
@@ -445,14 +455,14 @@ export default function App() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-4 sm:p-8 backdrop-blur-sm"
-            onClick={() => setSelectedVideo(null)} // Click outside to close
+            onClick={() => setSelectedVideo(null)}
           >
             <motion.div
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
               className="relative w-full max-w-5xl rounded-2xl overflow-hidden bg-black border border-white/10 shadow-2xl"
-              onClick={(e) => e.stopPropagation()} // Prevent clicking video from closing modal
+              onClick={(e) => e.stopPropagation()}
             >
               {/* Close Button */}
               <button
@@ -471,7 +481,7 @@ export default function App() {
 
               {/* Full Uncropped Video Player */}
               <video
-                src={selectedVideo.videoSrc}
+                src={selectedVideo.videoSrc.replace(/#/g, "%23")}
                 className="w-full max-h-[85vh] object-contain bg-black"
                 controls
                 autoPlay
