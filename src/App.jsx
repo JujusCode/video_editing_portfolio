@@ -340,7 +340,7 @@ export default function App() {
               <div className="border-t border-white/10 pb-4 lg:pb-0 pt-6 lg:pt-0">
                 <motion.a
                   whileHover={{ scale: 1.02 }}
-                  href="#YOUR_CONSULTATION_LINK"
+                  href="https://calendly.com/jjbards99/new-meeting"
                   className="w-full flex items-center justify-center gap-2 border-2 border-[var(--color-sunset)] text-[var(--color-sunset)] font-bold py-3.5 rounded-xl transition-all shadow-lg hover:shadow-[var(--color-sunset)]/10 text-sm lg:text-base"
                 >
                   <CalendarDays className="w-5 h-5" /> Book a Consultation
