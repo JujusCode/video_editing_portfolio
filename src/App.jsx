@@ -17,6 +17,7 @@ import {
   X,
 } from "lucide-react";
 /* --- HELPER DATA --- */
+/* --- HELPER DATA --- */
 const projects = [
   {
     id: 1,
@@ -93,18 +94,26 @@ const projects = [
   {
     id: 11,
     tab: "gaming",
-    title: "Doctor Spotlight Reel",
-    desc: "Professional short-form content designed to build authority and trust for medical practitioners.",
-    type: "Personal Brand",
+    title: "Roblox Funny Moments",
+    desc: "High-energy gameplay edit loaded with sound effects, zoom-ins, and fast pacing to maximize viewer retention.",
+    type: "Gaming Playthrough",
     videoSrc: "/Game1 Roblox.mp4",
   },
   {
-    id: 10,
+    id: 12,
     tab: "gaming",
-    title: "Doctor Spotlight Reel",
-    desc: "Professional short-form content designed to build authority and trust for medical practitioners.",
-    type: "Personal Brand",
+    title: "Roblox Highlight Cut",
+    desc: "Engaging and fast-paced gaming montage tailored perfectly for younger audiences and high replay value.",
+    type: "Gaming Highlight",
     videoSrc: "/Game2 Roblox.mp4",
+  },
+  {
+    id: 13,
+    tab: "real-estate",
+    title: "Premium Property Tour (Style Reference)",
+    desc: "A visual benchmark demonstrating the high-end pacing, color grading, and elegant aesthetic I target for real estate clients.",
+    type: "Style Reference",
+    videoSrc: "/Realestate1 Reference.mp4",
   },
 ];
 
