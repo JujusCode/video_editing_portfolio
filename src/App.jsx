@@ -17,7 +17,7 @@ import {
   Quote,
   X,
 } from "lucide-react";
-/* --- HELPER DATA --- */
+
 /* --- HELPER DATA --- */
 const projects = [
   {
@@ -27,6 +27,22 @@ const projects = [
     desc: "Fast-paced property tour with engaging captions and pattern interrupts.",
     type: "Real Estate",
     videoSrc: "/Reel1 realestate.mp4",
+  },
+  {
+    id: 14,
+    tab: "reels",
+    title: "AI OFM Strategies",
+    desc: "Latest client work for Grayson Giles breaking down AI OFM concepts with high-retention editing.",
+    type: "Personal Brand",
+    videoSrc: "/Reel4 OFM.mp4",
+  },
+  {
+    id: 15,
+    tab: "reels",
+    title: "IG Growth Hook",
+    desc: "Dynamic Instagram reel leveraging trending pacing and visual hooks to maximize algorithm reach.",
+    type: "Instagram Reel",
+    videoSrc: "/Reel5 IG.mp4",
   },
   {
     id: 2,
@@ -135,7 +151,13 @@ const skills = [
     desc: "I don't just cut clips; I craft narratives that build trust and drive direct response.",
   },
 ];
+
 const reviews = [
+  {
+    text: "Justine's editing on my AI OFM reels has been top-tier. He understands exactly how to pace the videos to keep the audience hooked and drive conversions.",
+    author: "Grayson Giles",
+    role: "@graysongiles9",
+  },
   {
     text: "The sponsorship edits for Clockwise Crypto have been flawless. Keeping a 423k+ subscriber audience engaged during an ad read is tough, but his retention strategies are spot on.",
     author: "Production Team",
@@ -353,7 +375,7 @@ export default function App() {
 
         {/* RIGHT PANEL */}
         <main className="flex-1 flex flex-col min-w-0 bg-transparent h-[600px] lg:h-auto relative">
-          {/* TABS CONTAINER - Now sticky to stay in place while scrolling */}
+          {/* TABS CONTAINER */}
           <div className="sticky top-0 z-40 bg-black/80 backdrop-blur-md border-b border-white/5">
             <div className="overflow-x-auto custom-scrollbar">
               <nav className="flex pt-4 px-4 lg:px-6 gap-1 min-w-max pb-1 lg:pb-0">
@@ -431,7 +453,6 @@ export default function App() {
                       >
                         {project.videoSrc ? (
                           <video
-                            // Fixes the hash symbol issue in filenames
                             src={project.videoSrc.replace(/#/g, "%23")}
                             className="w-full h-full object-contain pointer-events-none"
                             muted
