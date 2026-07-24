@@ -132,6 +132,46 @@ const projects = [
     type: "Style Reference",
     videoSrc: "/Realestate1 Reference.mp4",
   },
+  {
+    id: 14,
+    tab: "meta-ads",
+    title: "Amazon Product Ad — Revenue Driver",
+    desc: "High-converting Meta ad for an Amazon seller, helping boost product revenue by thousands through sharp visual storytelling.",
+    type: "E-commerce Ad",
+    videoSrc: "/meta 5.mp4",
+  },
+  {
+    id: 15,
+    tab: "meta-ads",
+    title: "Amazon Product Ad — Scroll-Stopping Hook",
+    desc: "Fast-hook Meta ad built for an Amazon brand, designed to stop the scroll and convert cold traffic into buyers.",
+    type: "E-commerce Ad",
+    videoSrc: "/meta 6.mp4",
+  },
+  {
+    id: 16,
+    tab: "meta-ads",
+    title: "Amazon Product Ad — Conversion Focused",
+    desc: "Direct-response edit for an Amazon product line, crafted to maximize add-to-carts and drive measurable revenue growth.",
+    type: "E-commerce Ad",
+    videoSrc: "/meta 7.mp4",
+  },
+  {
+    id: 17,
+    tab: "meta-ads",
+    title: "Amazon Product Ad — Brand Trust Builder",
+    desc: "Polished Meta ad for the same Amazon client, reinforcing brand trust while pushing product sales at scale.",
+    type: "E-commerce Ad",
+    videoSrc: "/meta 8.mp4",
+  },
+  {
+    id: 18,
+    tab: "reels",
+    title: "Documentary Highlight Cut",
+    desc: "Recent long-form documentary re-edited into a tight highlight reel, keeping only the most powerful and engaging moments.",
+    type: "Documentary Edit",
+    videoSrc: "/Reel6 Docu.mp4",
+  },
 ];
 
 const skills = [
@@ -416,6 +456,7 @@ export default function App() {
               >
                 {projects
                   .filter((p) => p.tab === activeTab)
+                  .sort((a, b) => b.id - a.id)
                   .map((project) => (
                     <div
                       key={project.id}
