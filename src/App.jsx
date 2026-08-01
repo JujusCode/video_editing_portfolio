@@ -172,6 +172,14 @@ const projects = [
     type: "Documentary Edit",
     videoSrc: "/Reel6 Docu.mp4",
   },
+  {
+    id: 19,
+    tab: "meta-ads",
+    title: "Amazon Product Ad — AI Generated",
+    desc: "High-converting AI-generated Meta ad crafted to stop the scroll and drive targeted e-commerce sales.",
+    type: "E-commerce Ad",
+    videoSrc: "/meta 9.mp4",
+  },
 ];
 
 const skills = [
@@ -241,7 +249,7 @@ export default function App() {
     { id: "gaming", label: "Gaming", icon: <Gamepad2 className="w-4 h-4" /> },
     {
       id: "meta-ads",
-      label: "Meta/FB Ads",
+      label: "AI Ads/Meta Ads",
       icon: <TrendingUp className="w-4 h-4" />,
     },
     { id: "podcasts", label: "Podcasts", icon: <Mic className="w-4 h-4" /> },
