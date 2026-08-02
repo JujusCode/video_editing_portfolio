@@ -226,6 +226,11 @@ const reviews = [
     author: "Marcus L.",
     role: "Airbnb Superhost",
   },
+  {
+    text: "Justine completely nailed our Meta ads. The hooks and pacing were exactly what we needed to grab attention, and the new creatives directly helped us drive a lot more sales. Fast turnaround and great to work with.",
+    author: "AI Ads Agency",
+    role: "Mustafa Bhimani",
+  },
 ];
 
 export default function App() {
@@ -292,33 +297,29 @@ export default function App() {
               <h2 className="text-2xl lg:text-3xl font-bold leading-tight mb-3 lg:mb-4 text-white">
                 I edit videos that <br className="hidden sm:block" />
                 <span className="text-[var(--color-sunset)]">
-                  capture attention.
+                  drive conversions.
                 </span>
               </h2>
-              <p className="text-sm lg:text-base text-[var(--color-text-muted)] leading-relaxed">
-                From{" "}
-                <span className="font-medium text-gray-100">viral reels</span>,{" "}
-                <span className="font-medium text-gray-100">
-                  gaming highlights
-                </span>
-                , and{" "}
-                <span className="font-medium text-gray-100">
-                  engaging vlogs
-                </span>{" "}
-                to{" "}
-                <span className="font-medium text-gray-100">
-                  professional real estate tours
-                </span>
-                ,{" "}
-                <span className="font-medium text-gray-100">
-                  long-form podcasts
-                </span>
-                , and{" "}
-                <span className="font-medium text-gray-100">
-                  high-converting Meta Ads
-                </span>
-                . I craft content tailored to your niche.
-              </p>
+              <div className="space-y-4 text-sm lg:text-base text-[var(--color-text-muted)] leading-relaxed">
+                <p>
+                  I edit high converting UGC and Meta ads that actually get
+                  people to stop scrolling and buy. Im an AI specialist and
+                  direct response video editor focused entirely on making
+                  content that performs and lowers your CPA.
+                </p>
+                <p>
+                  My background is in IT so using advanced tools is second
+                  nature to me. I edit primarily with DaVinci Resolve and CapCut
+                  Pro, and I am highly experienced with AI video generation
+                  models like Higgsfield, Veo, and Kling to create custom
+                  visuals that stand out.
+                </p>
+                <p>
+                  I know how to edit for the algorithm and what makes people
+                  click. If you need reliable creatives that scale your
+                  campaigns, I am ready to get to work.
+                </p>
+              </div>
             </div>
 
             <div className="space-y-3">
