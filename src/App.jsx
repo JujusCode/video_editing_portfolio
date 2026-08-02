@@ -180,6 +180,14 @@ const projects = [
     type: "E-commerce Ad",
     videoSrc: "/meta 9.mp4",
   },
+  {
+    id: 20,
+    tab: "meta-ads",
+    title: "Amazon Product Ad — AI Generated",
+    desc: "High-converting AI-generated Meta ad crafted to stop the scroll and drive targeted e-commerce sales.",
+    type: "E-commerce Ad",
+    videoSrc: "/meta 10.mp4",
+  },
 ];
 
 const skills = [
@@ -247,16 +255,16 @@ export default function App() {
 
   const tabs = [
     {
+      id: "meta-ads",
+      label: "AI Ads/Meta Ads",
+      icon: <TrendingUp className="w-4 h-4" />,
+    },
+    {
       id: "reels",
       label: "Reels & Shorts",
       icon: <Film className="w-4 h-4" />,
     },
     { id: "gaming", label: "Gaming", icon: <Gamepad2 className="w-4 h-4" /> },
-    {
-      id: "meta-ads",
-      label: "AI Ads/Meta Ads",
-      icon: <TrendingUp className="w-4 h-4" />,
-    },
     { id: "podcasts", label: "Podcasts", icon: <Mic className="w-4 h-4" /> },
     {
       id: "real-estate",
@@ -292,7 +300,6 @@ export default function App() {
                 </p>
               </div>
             </div>
-
             <div>
               <h2 className="text-2xl lg:text-3xl font-bold leading-tight mb-3 lg:mb-4 text-white">
                 I edit videos that <br className="hidden sm:block" />
@@ -302,22 +309,33 @@ export default function App() {
               </h2>
               <div className="space-y-4 text-sm lg:text-base text-[var(--color-text-muted)] leading-relaxed">
                 <p>
-                  I edit high converting UGC and Meta ads that actually get
-                  people to stop scrolling and buy. Im an AI specialist and
-                  direct response video editor focused entirely on making
-                  content that performs and lowers your CPA.
+                  I build{" "}
+                  <span className="font-medium text-gray-100">
+                    high converting UGC and Meta ads
+                  </span>{" "}
+                  that actually stop the scroll. As an{" "}
+                  <span className="font-medium text-gray-100">
+                    AI specialist and direct response editor
+                  </span>
+                  , I focus entirely on lowering your CPA.
                 </p>
                 <p>
-                  My background is in IT so using advanced tools is second
-                  nature to me. I edit primarily with DaVinci Resolve and CapCut
-                  Pro, and I am highly experienced with AI video generation
-                  models like Higgsfield, Veo, and Kling to create custom
-                  visuals that stand out.
+                  With my IT background, I pair{" "}
+                  <span className="font-medium text-gray-100">
+                    DaVinci Resolve and CapCut Pro
+                  </span>{" "}
+                  with advanced AI models like{" "}
+                  <span className="font-medium text-gray-100">
+                    Higgsfield, Veo, and Kling
+                  </span>{" "}
+                  to generate custom visuals at scale.
                 </p>
                 <p>
-                  I know how to edit for the algorithm and what makes people
-                  click. If you need reliable creatives that scale your
-                  campaigns, I am ready to get to work.
+                  I edit for the algorithm. If you need{" "}
+                  <span className="font-medium text-gray-100">
+                    reliable creatives that scale
+                  </span>
+                  , Im ready to get to work.
                 </p>
               </div>
             </div>
