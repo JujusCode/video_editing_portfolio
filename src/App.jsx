@@ -61,22 +61,6 @@ const projects = [
     videoSrc: "/Reel2 Airbnb.mp4",
   },
   {
-    id: 5,
-    tab: "meta-ads",
-    title: "Ink & Ebony - E-com Promo",
-    desc: "Direct response ad that drove a 3x ROAS for the client.",
-    type: "Meta Ads",
-    videoSrc: "/meta 1.mp4",
-  },
-  {
-    id: 6,
-    tab: "meta-ads",
-    title: "Tyrnav Accounting",
-    desc: "Brand trust building through visual storytelling.",
-    type: "Facebook Ads",
-    videoSrc: "/meta 2.mp4",
-  },
-  {
     id: 7,
     tab: "meta-ads",
     title: "KeffordConsulting Promo Ad",
@@ -182,6 +166,14 @@ const projects = [
   },
   {
     id: 20,
+    tab: "meta-ads",
+    title: "AI UGC Haircare Ad",
+    desc: "AI-generated UGC Meta ad for a haircare brand, designed to stop the scroll with authentic storytelling and drive e-commerce conversions.",
+    type: "Meta Ad",
+    videoSrc: "/AI Raw.mp4",
+  },
+  {
+    id: 21,
     tab: "meta-ads",
     title: "Amazon Product Ad — AI Generated",
     desc: "High-converting AI-generated Meta ad crafted to stop the scroll and drive targeted e-commerce sales.",
