@@ -180,6 +180,14 @@ const projects = [
     type: "E-commerce Ad",
     videoSrc: "/meta 10.mp4",
   },
+  {
+    id: 22,
+    tab: "meta-ads",
+    title: "Amazon Air Purifier Ad — AI Generated",
+    desc: "AI-generated Facebook ad featuring cinematic visuals, natural voiceover, and Meta-optimized storytelling designed to drive e-commerce conversions.",
+    type: "AI E-commerce Ad",
+    videoSrc: "/meta 11.mp4",
+  },
 ];
 
 const skills = [
