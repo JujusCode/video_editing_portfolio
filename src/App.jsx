@@ -242,7 +242,7 @@ const reviews = [
 ];
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState("reels");
+  const [activeTab, setActiveTab] = useState("meta-ads");
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -296,7 +296,7 @@ export default function App() {
                   Justine Bardinas
                 </h1>
                 <p className="text-xs lg:text-sm text-[var(--color-sunset)] font-semibold tracking-wide uppercase mt-1">
-                  Video Editor
+                  Video Editor & AI Specialist
                 </p>
               </div>
             </div>
@@ -309,13 +309,13 @@ export default function App() {
               </h2>
               <div className="space-y-4 text-sm lg:text-base text-[var(--color-text-muted)] leading-relaxed">
                 <p>
-                  I build{" "}
+                  With over 2 years of experience mastering the craft, I build{" "}
                   <span className="font-medium text-gray-100">
                     high converting UGC and Meta ads
                   </span>{" "}
-                  that actually stop the scroll. As an{" "}
+                  that actually stop the scroll. As a{" "}
                   <span className="font-medium text-gray-100">
-                    AI specialist and direct response editor
+                    direct response editor and AI specialist
                   </span>
                   , I focus entirely on lowering your CPA.
                 </p>
