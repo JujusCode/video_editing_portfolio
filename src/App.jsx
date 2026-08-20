@@ -188,6 +188,22 @@ const projects = [
     type: "AI E-commerce Ad",
     videoSrc: "/meta 11.mp4",
   },
+  {
+    id: 23,
+    tab: "meta-ads",
+    title: "Animated Eye Medicine Ad",
+    desc: "Engaging cartoon-style Meta ad for eye health, utilizing colorful animations to stop the scroll and clearly communicate product benefits for targeted conversions.",
+    type: "Animated Health Ad",
+    videoSrc: "/Cartoon AD1.mp4",
+  },
+  {
+    id: 24,
+    tab: "meta-ads",
+    title: "Animated Foot Relief Ad",
+    desc: "Relatable cartoon-style Meta ad targeting foot pain relief. Designed with engaging animated visuals to capture attention and drive e-commerce sales.",
+    type: "Animated Health Ad",
+    videoSrc: "/Cartoon AD2.mp4",
+  },
 ];
 
 const skills = [
