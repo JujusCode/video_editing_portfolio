@@ -210,7 +210,7 @@ const projects = [
     title: "Article Ad — AI Generated",
     desc: "AI-generated UGC-style Meta ad designed to mimic a user-generated article, crafted to stop the scroll and drive e-commerce conversions.",
     type: "UGC Article Ad",
-    videoSrc: "/Cartoon AD2.mp4",
+    videoSrc: "/meta 12.mp4",
   },
 ];
 
