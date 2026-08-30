@@ -212,6 +212,14 @@ const projects = [
     type: "UGC Article Ad",
     videoSrc: "/meta 12.mp4",
   },
+  {
+    id: 26,
+    tab: "meta-ads",
+    title: "EBook Cooking Book — AI Generated",
+    desc: "AI-generated UGC-style Meta ad promoting a cooking eBook, designed to stop the scroll and drive e-commerce conversions.",
+    type: "UGC EBook Ad",
+    videoSrc: "/meta 13.mp4",
+  },
 ];
 
 const skills = [
