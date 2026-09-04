@@ -223,9 +223,9 @@ const projects = [
   {
     id: 27,
     tab: "meta-ads",
-    title: "Hair Straightener — AI Generated",
-    desc: "AI-generated UGC-style Meta ad promoting a hair straightener, designed to stop the scroll and drive e-commerce conversions.",
-    type: "UGC Hair Straightener Ad",
+    title: "Thermal Brush Ad — AI Generated",
+    desc: "AI-generated UGC-style Meta ad promoting a thermal brush, designed to stop the scroll and drive e-commerce conversions.",
+    type: "UGC Thermal Brush Ad",
     videoSrc: "/meta 14.mp4",
   },
 ];
