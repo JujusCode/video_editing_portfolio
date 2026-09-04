@@ -220,6 +220,14 @@ const projects = [
     type: "UGC EBook Ad",
     videoSrc: "/meta 13.mp4",
   },
+  {
+    id: 27,
+    tab: "meta-ads",
+    title: "Hair Straightener — AI Generated",
+    desc: "AI-generated UGC-style Meta ad promoting a hair straightener, designed to stop the scroll and drive e-commerce conversions.",
+    type: "UGC Hair Straightener Ad",
+    videoSrc: "/meta 14.mp4",
+  },
 ];
 
 const skills = [
