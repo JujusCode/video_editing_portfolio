@@ -228,14 +228,14 @@ const projects = [
     type: "UGC Thermal Brush Ad",
     videoSrc: "/meta 14.mp4",
   },
-  // {
-  //   id: 28,
-  //   tab: "meta-ads",
-  //   title: "Nord Skin Product",
-  //   desc: "AI-generated Meta ad for Nord Skin, designed to stop the scroll and drive e-commerce conversions with high-retention editing and visual storytelling.",
-  //   type: "VSL Ad",
-  //   videoSrc: "/meta 15.mp4",
-  // },
+  {
+    id: 28,
+    tab: "meta-ads",
+    title: "Nord Skin Product",
+    desc: "AI-generated Meta ad for Nord Skin, designed to stop the scroll and drive e-commerce conversions with high-retention editing and visual storytelling.",
+    type: "VSL Ad",
+    videoSrc: "/meta 15.mp4",
+  },
 ];
 
 const skills = [
