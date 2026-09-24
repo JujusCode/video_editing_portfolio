@@ -236,6 +236,14 @@ const projects = [
     type: "VSL Ad",
     videoSrc: "/meta 15.mp4",
   },
+  {
+    id: 29,
+    tab: "meta-ads",
+    title: "Female Model AI Ad",
+    desc: "AI-generated Meta ad featuring a female model, designed to stop the scroll and drive conversions with high-retention editing and visual storytelling.",
+    type: "IG Reel Ad",
+    videoSrc: "/meta 16.mp4",
+  },
 ];
 
 const skills = [
