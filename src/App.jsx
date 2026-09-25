@@ -244,6 +244,22 @@ const projects = [
     type: "IG Reel Ad",
     videoSrc: "/meta 16.mp4",
   },
+  {
+    id: 30,
+    tab: "meta-ads",
+    title: "Fomin Soap UGC Ad",
+    desc: "AI-generated Meta ad for Fomin Soap, designed to stop the scroll and drive conversions with high-retention editing and visual storytelling.",
+    type: "AI UGC Ad",
+    videoSrc: "/meta 17.mp4",
+  },
+  {
+    id: 31,
+    tab: "meta-ads",
+    title: "Realistic AI Table Unboxing Ad",
+    desc: "AI-generated Meta ad showcasing a realistic unboxing of a table, designed to stop the scroll and drive conversions with high-retention editing and visual storytelling.",
+    type: "Realistic Unboxing Ad",
+    videoSrc: "/meta 18.mp4",
+  },
 ];
 
 const skills = [
